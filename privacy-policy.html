@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="scoutr-logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoutr - Ganhe tirando fotos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #fff5f5;
+      }
+      .texts-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: start;
+      }
+      .second-texts-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: start;
+      }
+      .second-image-container {
+      }
+      .title {
+        font-family: Montserrat;
+        font-weight: 800;
+        color: #6b6b6b;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+      .second-title {
+        font-family: Montserrat;
+        font-weight: 800;
+        color: #6b6b6b;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: #6b6b6b;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+      }
+      a {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500 !important;
+      }
+      .cta-button {
+        padding: 10px 30px 10px 30px;
+        background-color: #ff5d5d;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      .cta-button-title {
+        font-size: 30px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: white;
+      }
+      .desktop-image {
+        object-fit: contain;
+      }
+      .mobile-image {
+        display: none;
+      }
+      .section-title-row {
+        margin-bottom: 40px;
+        margin-top: 100px;
+      }
+      .section-subtitle {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 60px;
+        color: #ff5d5d;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 768px) {
+        .second-texts-container {
+          align-items: center;
+        }
+        .title {
+          font-size: 32px;
+          line-height: 35px;
+        }
+        .second-title {
+          font-size: 32px;
+          line-height: 35px;
+          text-align: start;
+        }
+        .subtitle {
+          font-size: 21px;
+        }
+        .desktop-image {
+          display: none;
+        }
+        .mobile-image {
+          display: block;
+          margin-bottom: 40px;
+        }
+        .cta-button {
+          width: 100%;
+          text-align: center;
+          margin: 30px 0 30px 0;
+        }
+        .cta-button-title {
+          font-size: 20px;
+          font-family: Montserrat;
+          font-weight: 700;
+          color: white;
+        }
+        .section-title-row {
+          margin-bottom: 20px;
+          margin-top: 40px;
+        }
+        .section-subtitle {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid col-md-10">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="
+            margin-right: 50px;
+            font-weight: 800 !important;
+            font-size: 24px;
+          "
+        >
+          <img src="scoutr-logo.png" alt="Scoutr logo" width="35px" />
+          <span>Scoutr</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#how-it-works"
+                >Como funciona</a
+              >
+            </li>
+          </ul>
+          <!-- <div
+            style="
+              padding: 5px 15px 5px 15px;
+              background-color: #ff5d5d;
+              border-radius: 8px;
+              cursor: pointer;
+            "
+          >
+            <span
+              style="
+                font-size: 16px;
+                font-family: Montserrat;
+                font-weight: 700;
+                color: white;
+              "
+              >Baixe o app</span
+            >
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row" style="margin-top: 8%">
+        <div class="col-md-12">
+          <h2>Política de Privacidade</h2>
+
+          <h3>1. Introdução</h3>
+          <p>
+            Bem-vindo ao Scoutr! Nossa Política de Privacidade tem como objetivo
+            esclarecer como coletamos, usamos, armazenamos e protegemos suas
+            informações pessoais ao utilizar nosso aplicativo e serviços.
+            Valorizamos sua privacidade e estamos comprometidos em garantir a
+            proteção de seus dados.
+          </p>
+
+          <h3>2. Informações Coletadas</h3>
+          <h4>2.1 Informações Fornecidas pelo Usuário:</h4>
+          <ul>
+            <li>
+              Cadastro: Nome, e-mail, e número de telefone.
+            </li>
+            <li>
+              Perfil: Fotos de perfil, preferências e outras informações
+              opcionais que você pode fornecer.
+            </li>
+          </ul>
+
+          <h4>2.2 Informações Coletadas Automaticamente:</h4>
+          <ul>
+            <li>
+              Dados de Uso: Informações sobre sua interação com o aplicativo,
+              incluindo data e hora de acesso, recursos utilizados e tempo de
+              uso.
+            </li>
+            <li>
+              Informações de Dispositivo: Modelo do dispositivo, sistema
+              operacional, identificadores únicos e informações de rede.
+            </li>
+            <li>
+              Dados de Localização: Coletamos dados de localização precisos para
+              oferecer serviços baseados em sua localização.
+            </li>
+          </ul>
+
+          <h3>3. Uso das Informações</h3>
+          <p>Utilizamos as informações coletadas para:</p>
+          <ul>
+            <li>
+              Prestar e Melhorar os Serviços: Personalizar sua experiência,
+              fornecer suporte e aprimorar nosso aplicativo.
+            </li>
+            <li>
+              Processar Transações: Gerenciar pagamentos e transações entre
+              usuários.
+            </li>
+            <li>
+              Comunicação: Enviar notificações importantes, atualizações,
+              ofertas e mensagens promocionais.
+            </li>
+            <li>
+              Segurança: Proteger contra fraudes, monitorar atividades suspeitas
+              e garantir a segurança de nossos usuários.
+            </li>
+          </ul>
+
+          <h3>4. Compartilhamento de Informações</h3>
+          <h4>4.1 Com Outros Usuários:</h4>
+          <p>
+            Quando você faz um pedido ou aceita um trabalho, apenas seu nome e
+            foto de perfil serão compartilhados com o outro usuário.
+          </p>
+
+          <h3>5. Armazenamento e Segurança das Informações</h3>
+          <p>
+            Tomamos medidas técnicas e organizacionais adequadas para proteger
+            suas informações contra acesso não autorizado, alteração, divulgação
+            ou destruição. No entanto, nenhum método de transmissão pela
+            internet ou armazenamento eletrônico é 100% seguro.
+          </p>
+
+          <h3>6. Seus Direitos</h3>
+          <p>Você tem o direito de:</p>
+          <ul>
+            <li>
+              Acessar: Solicitar uma cópia das informações pessoais que mantemos
+              sobre você.
+            </li>
+            <li>Corrigir: Corrigir informações imprecisas ou incompletas.</li>
+            <li>
+              Excluir: Solicitar a exclusão de suas informações pessoais,
+              sujeito a certas exceções.
+            </li>
+            <li>
+              Restringir o Processamento: Solicitar a restrição do processamento
+              de suas informações pessoais.
+            </li>
+            <li>
+              Portabilidade de Dados: Solicitar a transferência de suas
+              informações pessoais para outra entidade.
+            </li>
+          </ul>
+
+          <h3>7. Cookies e Tecnologias Semelhantes</h3>
+          <p>
+            Utilizamos cookies e tecnologias semelhantes para coletar
+            informações sobre sua interação com nosso aplicativo, com o objetivo
+            de melhorar sua experiência e personalizar nosso serviço.
+          </p>
+
+          <h3>8. Alterações na Política de Privacidade</h3>
+          <p>
+            Podemos atualizar esta Política de Privacidade periodicamente.
+            Notificaremos você sobre quaisquer mudanças significativas através
+            do aplicativo ou por outros meios de comunicação.
+          </p>
+
+          <h3>9. Contato</h3>
+          <p>
+            Se você tiver dúvidas ou preocupações sobre nossa Política de
+            Privacidade, entre em contato conosco em:
+          </p>
+          <p>Email: suporte@scoutr.com.br</p>
+
+          <p>
+            Esta Política de Privacidade foi atualizada pela última vez em
+            17/07/2024.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+      <div class="col-md-10 mx-auto">
+        <footer class="py-3">
+          <div style="margin-top: 20px">
+            <a
+              href="index.html"
+              class="text-light navbar-brand"
+              style="font-weight: 800 !important; font-size: 24px"
+            >
+              <img src="scoutr-logo.png" alt="Scoutr logo" width="35px" />
+              <span>Scoutr</span>
+            </a>
+          </div>
+          <div
+            class="row my-5 border-bottom"
+            style="
+              border-width: 2px !important;
+              border-color: #353a40 !important;
+            "
+          >
+            <div class="col-md-4"></div>
+            <div class="col-md-2 mb-3 text-light">
+              <h5 style="font-family: Montserrat">Institucional</h5>
+              <ul class="nav flex-column">
+                <!-- <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    >Quem somos</a
+                  >
+                </li> -->
+                <li class="nav-item mb-2">
+                  <a
+                    href="index.html#how-it-works"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    >Como funciona</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="terms.html"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    >Termos de uso</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="privacy-policy.html"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    >Política de privacidade</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-2 mb-3 text-light">
+              <h5 style="font-family: Montserrat">Contato</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a
+                    href="https://wa.me/41936180115"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    ><i class="fa-brands fa-whatsapp"></i> (41) 93618-0115</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="mailto: contato@scoutr.com.br"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    ><i class="fa-solid fa-envelope"></i>
+                    contato@scoutr.com.br</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="https://discord.com/invite/D9rctGps"
+                    class="nav-link p-0 text-light"
+                    style="font-family: Nunito; font-weight: 300 !important"
+                    ><i class="fa-brands fa-discord"></i> Comunidade no
+                    Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <p
+            class="text-center text-light"
+            style="
+              font-family: Montserrat;
+              font-weight: 600;
+              color: #999999 !important;
+            "
+          >
+            © 2024 Scoutr
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11471593249"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11471593249");
+    </script>
+
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-11471593249/ga6jCN3PjogZEKG-it4q",
+        value: 1.0,
+        currency: "BRL",
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/b7904caa46.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
