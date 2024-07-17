@@ -312,19 +312,16 @@
           emailInput: emailInput,
         });
 
-        fetch(
-          "https://api.scoutr.com.br/waitlist-emails",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              email,
-              userAgent,
-            }),
-          }
-        );
+        fetch("https://api.scoutr.com.br/waitlist-emails", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            userAgent,
+          }),
+        });
 
         Swal.fire({
           title: "Obrigado",
