@@ -312,6 +312,10 @@
           emailInput: emailInput,
         });
 
+        gtag("event", "conversion", {
+          send_to: "AW-11471953249/zKSpC2N1hMQZEKG-it4Q",
+        });
+
         fbq("track", "CompleteRegistration");
 
         fetch("https://api.scoutr.com.br/waitlist-emails", {
